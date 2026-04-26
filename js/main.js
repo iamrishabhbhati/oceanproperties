@@ -318,36 +318,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Counter Animation ----
   const counters = document.querySelectorAll('.counter');
-  let counterAnimated = false;
 
-  function animateCounters() {
-    if (counterAnimated) return;
-    
+  function animateCounter(counter) {
+    if (counter.dataset.animated) return;
+    counter.dataset.animated = 'true';
+
+    const target = parseInt(counter.getAttribute('data-target'));
+    const suffix = counter.getAttribute('data-suffix') || '';
+    let current = 0;
+    const increment = target / 60;
+    const stepTime = 2000 / 60;
+
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
+      }
+      counter.textContent = Math.floor(current) + suffix;
+    }, stepTime);
+  }
+
+  function checkCounters() {
     counters.forEach(counter => {
       const elementTop = counter.getBoundingClientRect().top;
-      if (elementTop < window.innerHeight - 100) {
-        counterAnimated = true;
-        const target = parseInt(counter.getAttribute('data-target'));
-        const suffix = counter.getAttribute('data-suffix') || '';
-        let current = 0;
-        const increment = target / 60;
-        const duration = 2000;
-        const stepTime = duration / 60;
-
-        const timer = setInterval(() => {
-          current += increment;
-          if (current >= target) {
-            current = target;
-            clearInterval(timer);
-          }
-          counter.textContent = Math.floor(current) + suffix;
-        }, stepTime);
+      if (elementTop < window.innerHeight - 50) {
+        animateCounter(counter);
       }
     });
   }
 
-  window.addEventListener('scroll', animateCounters);
-  animateCounters();
+  window.addEventListener('scroll', checkCounters);
+  checkCounters();
+
+  // Fallback: animate counters after 3s even if scroll detection fails
+  setTimeout(() => {
+    counters.forEach(counter => animateCounter(counter));
+  }, 3000);
 
   // ---- Parallax Effect for Hero ----
   const heroBg = document.querySelector('.hero-bg img');
