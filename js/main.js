@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Smooth Scroll for Anchor Links ----
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
       if (href === '#') return;
-      
+
       const target = document.querySelector(href);
       if (target) {
         e.preventDefault();
@@ -89,15 +89,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Active Nav Link on Scroll ----
   const sections = document.querySelectorAll('section[id]');
-  
+
   function updateActiveNav() {
     const scrollPos = window.scrollY + 150;
-    
+
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
       const sectionId = section.getAttribute('id');
-      
+
       if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
         document.querySelectorAll('.nav-links a').forEach(link => {
           link.classList.remove('active');
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (index >= totalSlides) index = 0;
       currentSlide = index;
       testimonialTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-      
+
       testimonialDots.forEach((dot, i) => {
         dot.classList.toggle('active', i === currentSlide);
       });
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         propertyCards.forEach(card => {
           const category = card.getAttribute('data-category');
-          
+
           if (filter === 'all' || category === filter) {
             card.style.display = '';
             card.style.animation = 'fadeInUp 0.5s ease forwards';
@@ -239,13 +239,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contactForm');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      
+
       const formData = new FormData(contactForm);
       const submitBtn = contactForm.querySelector('.btn-submit');
       const messageDiv = document.getElementById('formMessage');
-      
+
       // Get form values
       const name = formData.get('name')?.trim();
       const phone = formData.get('phone')?.trim();
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const preferredDate = formData.get('preferredDate') || 'Not specified';
       const budget = formData.get('budget') || 'Not specified';
       const message = formData.get('message') || 'No additional message';
-      
+
       const whatsappMessage = encodeURIComponent(
         `Hi Ocean Properties! I submitted an inquiry via your website.\n\n` +
         `*Name:* ${name}\n` +
@@ -294,14 +294,12 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
-        showFormMessage(messageDiv, '✅ Thank you! Redirecting you to WhatsApp to confirm your inquiry...', 'success');
+        showFormMessage(messageDiv, '✅ Thank you! Redirecting you to WhatsApp...', 'success');
         contactForm.reset();
 
-        // Open WhatsApp with pre-filled message
-        setTimeout(() => {
-          window.open(whatsappURL, '_blank');
-        }, 1500);
-      }, 1500);
+        // Use location.href — works on all mobile browsers (window.open gets blocked)
+        window.location.href = whatsappURL;
+      }, 1000);
     });
   }
 
@@ -310,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
     element.className = `form-message ${type}`;
     element.textContent = message;
     element.style.display = 'block';
-    
+
     setTimeout(() => {
       element.style.display = 'none';
     }, 6000);
