@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 40 300 340" width="100%" height="100%">
+  <!-- Invisible bounding box to ensure proper scaling and no clipping -->
+  <rect x="50" y="40" width="300" height="340" fill="none" />
+
+  <!-- Outer Roof with explicitly rounded top using quadratic bezier -->
+  <path d="M 105 185 L 190 57.5 Q 200 42.5 210 57.5 L 295 185" fill="none" stroke="#0066FF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Inner House -->
+  <path d="M 135 245 L 135 182.5 L 200 85 L 265 182.5 L 265 245 L 225 245 L 225 185 A 25 25 0 0 0 175 185 L 175 245 Z" fill="#0066FF"/>
+
+  <!-- Texts (Changed OCEAN to white to be visible on dark navbars/footers) -->
+  <text x="200" y="315" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" text-anchor="middle" fill="#FFFFFF" letter-spacing="2">OCEAN</text>
+
+  <!-- Line -->
+  <line x1="70" y1="335" x2="330" y2="335" stroke="#0066FF" stroke-width="3" />
+
+  <!-- PROPERTIES text -->
+  <text x="200" y="370" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="800" text-anchor="middle" fill="#0066FF" letter-spacing="4">PROPERTIES</text>
+</svg>

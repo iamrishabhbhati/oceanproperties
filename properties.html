@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Properties — Ocean Properties | Greater Noida & YEIDA</title>
+  <meta name="description" content="Browse all properties available with Ocean Properties — Residential, Commercial, Industrial & Institutional properties in Greater Noida & Yamuna Expressway.">
+  <meta name="keywords" content="properties Greater Noida, YEIDA plots, commercial shops, residential apartments, industrial land">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <img src="logo.svg" alt="Ocean Properties Logo">
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="properties.html" class="active">Properties</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="nav-social">
+          <a href="https://www.instagram.com/oceanreal.estate/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Properties</h1>
+      <p>Explore our complete portfolio of premium properties in Greater Noida & Yamuna Expressway</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Properties</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROPERTIES LISTING ============ -->
+  <section class="section properties">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-tab active" data-filter="all">All Properties</button>
+        <button class="filter-tab" data-filter="residential">Residential</button>
+        <button class="filter-tab" data-filter="commercial">Commercial</button>
+        <button class="filter-tab" data-filter="industrial">Industrial</button>
+        <button class="filter-tab" data-filter="institutional">Institutional</button>
+      </div>
+
+      <div class="properties-grid">
+
+        <!-- Property 1 -->
+        <div class="property-card reveal" data-category="residential">
+          <div class="property-card-image">
+            <img src="images/property-1.png" alt="Ace Divino 3BHK Apartment">
+            <span class="property-badge badge-sale">For Sale</span>
+            <span class="property-type-badge">Residential</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹85 Lakh</div>
+            <h3 class="property-title">Ace Divino 3BHK Luxury Apartment</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Sector 1, Greater Noida West
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-bed"></i> 3 BHK</div>
+              <div class="property-spec"><i class="fas fa-bath"></i> 2 Bath</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 1,450 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="property-card reveal" data-category="commercial">
+          <div class="property-card-image">
+            <img src="images/property-2.png" alt="Galaxy Blue Sapphire Plaza">
+            <span class="property-badge badge-sale">For Sale</span>
+            <span class="property-type-badge">Commercial</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹45 Lakh</div>
+            <h3 class="property-title">Galaxy Blue Sapphire Plaza Shop</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Sector 4, Greater Noida West
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-store"></i> Retail Shop</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 450 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="property-card reveal" data-category="commercial">
+          <div class="property-card-image">
+            <img src="images/property-3.png" alt="Pari Chowk Premium Office">
+            <span class="property-badge badge-rent">For Rent</span>
+            <span class="property-type-badge">Commercial</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹1.2 Cr</div>
+            <h3 class="property-title">Pari Chowk Premium Office Space</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Pari Chowk, Greater Noida
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-building"></i> Office</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 1,200 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 4 -->
+        <div class="property-card reveal" data-category="residential">
+          <div class="property-card-image">
+            <img src="images/property-4.png" alt="Yamuna Expressway Villa">
+            <span class="property-badge badge-new">New Launch</span>
+            <span class="property-type-badge">Residential</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹1.8 Cr</div>
+            <h3 class="property-title">Yamuna Expressway Premium Villa</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Sector 22D, YEIDA
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-bed"></i> 4 BHK</div>
+              <div class="property-spec"><i class="fas fa-bath"></i> 3 Bath</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 2,800 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 5 -->
+        <div class="property-card reveal" data-category="industrial">
+          <div class="property-card-image">
+            <img src="images/property-5.png" alt="Alpha 1 Industrial Plot">
+            <span class="property-badge badge-sale">For Sale</span>
+            <span class="property-type-badge">Industrial</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹2.5 Cr</div>
+            <h3 class="property-title">Alpha 1 Industrial Plot</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Alpha 1, Greater Noida
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-industry"></i> Industrial</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 5,000 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 6 -->
+        <div class="property-card reveal" data-category="residential">
+          <div class="property-card-image">
+            <img src="images/property-6.png" alt="Gaur City 2BHK Flat">
+            <span class="property-badge badge-sale">For Sale</span>
+            <span class="property-type-badge">Residential</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹55 Lakh</div>
+            <h3 class="property-title">Gaur City 2BHK Smart Flat</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Sector 16C, Greater Noida West
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-bed"></i> 2 BHK</div>
+              <div class="property-spec"><i class="fas fa-bath"></i> 2 Bath</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 1,050 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 7 -->
+        <div class="property-card reveal" data-category="residential">
+          <div class="property-card-image">
+            <img src="images/property-4.png" alt="Supertech Eco Village">
+            <span class="property-badge badge-sale">For Sale</span>
+            <span class="property-type-badge">Residential</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹38 Lakh</div>
+            <h3 class="property-title">Supertech Eco Village 2BHK</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Sector 16B, Greater Noida West
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-bed"></i> 2 BHK</div>
+              <div class="property-spec"><i class="fas fa-bath"></i> 2 Bath</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 935 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 8 -->
+        <div class="property-card reveal" data-category="commercial">
+          <div class="property-card-image">
+            <img src="images/property-2.png" alt="Alpha Commercial Belt">
+            <span class="property-badge badge-rent">For Rent</span>
+            <span class="property-type-badge">Commercial</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹35K/month</div>
+            <h3 class="property-title">Alpha Commercial Belt Showroom</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Commercial Belt, Alpha 2, Greater Noida
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-store"></i> Showroom</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 800 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 9 -->
+        <div class="property-card reveal" data-category="residential">
+          <div class="property-card-image">
+            <img src="images/property-1.png" alt="ATS Destinaire">
+            <span class="property-badge badge-new">New Launch</span>
+            <span class="property-type-badge">Residential</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹1.1 Cr</div>
+            <h3 class="property-title">ATS Destinaire 3BHK Premium</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Sector 1, Greater Noida West
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-bed"></i> 3 BHK</div>
+              <div class="property-spec"><i class="fas fa-bath"></i> 3 Bath</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 1,750 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 10 -->
+        <div class="property-card reveal" data-category="industrial">
+          <div class="property-card-image">
+            <img src="images/property-5.png" alt="YEIDA Industrial Land">
+            <span class="property-badge badge-sale">For Sale</span>
+            <span class="property-type-badge">Industrial</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹4.5 Cr</div>
+            <h3 class="property-title">YEIDA Industrial Zone Plot</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Sector 29, YEIDA
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-industry"></i> Industrial</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 10,000 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 11 -->
+        <div class="property-card reveal" data-category="institutional">
+          <div class="property-card-image">
+            <img src="images/property-3.png" alt="Institutional Land YEIDA">
+            <span class="property-badge badge-sale">For Sale</span>
+            <span class="property-type-badge">Institutional</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹8 Cr</div>
+            <h3 class="property-title">Institutional Land — Knowledge Park</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Knowledge Park V, Greater Noida
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-university"></i> Institutional</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 2 Acres</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 12 -->
+        <div class="property-card reveal" data-category="residential">
+          <div class="property-card-image">
+            <img src="images/property-6.png" alt="Mahagun Mywoods">
+            <span class="property-badge badge-rent">For Rent</span>
+            <span class="property-type-badge">Residential</span>
+          </div>
+          <div class="property-card-content">
+            <div class="property-price">₹15K/month</div>
+            <h3 class="property-title">Mahagun Mywoods 2BHK Flat</h3>
+            <div class="property-location">
+              <i class="fas fa-map-marker-alt"></i>
+              Sector 16C, Greater Noida West
+            </div>
+            <div class="property-specs">
+              <div class="property-spec"><i class="fas fa-bed"></i> 2 BHK</div>
+              <div class="property-spec"><i class="fas fa-bath"></i> 2 Bath</div>
+              <div class="property-spec"><i class="fas fa-vector-square"></i> 1,050 sq.ft</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA SECTION ============ -->
+  <section class="section why-us">
+    <div class="container" style="text-align: center; position: relative; z-index: 1;">
+      <div class="reveal">
+        <h2 style="color: #fff; margin-bottom: 16px;">Didn't Find What You're Looking For?</h2>
+        <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 32px; font-size: 1.05rem;">
+          We have access to hundreds of more properties. Tell us your requirements and our experts will find the perfect match for you.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#contact" class="btn btn-primary">
+            <i class="fas fa-phone-alt"></i> Schedule a Call
+          </a>
+          <a href="https://wa.me/919911402454?text=Hi%20Ocean%20Properties!%20I%20am%20looking%20for%20a%20property%20in%20Greater%20Noida." class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.svg" alt="Ocean Properties Logo">
+          <p>Your trusted partner for premium real estate in Greater Noida & Yamuna Expressway since 2000. Sale, Purchase & Rent of Residential, Commercial, Industrial & Institutional properties.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/oceanreal.estate/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/919911402454" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="index.html#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Properties</a></li>
+            <li><a href="index.html#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Property Types</h4>
+          <ul>
+            <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Residential</a></li>
+            <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Commercial</a></li>
+            <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Industrial</a></li>
+            <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Institutional</a></li>
+            <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Plots & Land</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>MSX Tower 1, Commercial Belt, Alpha 1, Greater Noida, UP</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>
+                <a href="tel:+919911402454">+91 99114 02454</a><br>
+                <a href="tel:+919311402454">+91 93114 02454</a><br>
+                <a href="tel:+918920787171">+91 89207 87171</a>
+              </span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:oceanproperties2454@gmail.com">oceanproperties2454@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2000 — 2026 Ocean Properties. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING BUTTONS ============ -->
+  <a href="https://wa.me/919911402454?text=Hi%20Ocean%20Properties!%20I%20am%20interested%20in%20a%20property%20consultation." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
